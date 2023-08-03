@@ -9,7 +9,14 @@ program
   .parse(process.argv);
 
 const inputPath = program.args[0];
-const outputPath = program.output || inputPath;
+const outputPath = program.args[1] || inputPath;
+if (!outputPath) {
+  console.log("Please specify an output path");
+  process.exit(1);
+}
+
+console.log("inputPath", inputPath);
+console.log("outputPath", outputPath);
 
 async function compressImages() {
   try {
@@ -27,7 +34,7 @@ async function compressImages() {
 
     console.log("Images compressed successfully!");
   } catch (error) {
-    console.log(error.messages);
+    console.log("Error compressing images:", error);
   }
 }
 
