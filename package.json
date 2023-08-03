@@ -1,0 +1,24 @@
+{
+  "name": "compress-images",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgabor92/compress-images.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgabor92/compress-images/issues"
+  },
+  "homepage": "https://github.com/dgabor92/compress-images#readme",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "sharp": "^0.32.4"
+  }
+}
